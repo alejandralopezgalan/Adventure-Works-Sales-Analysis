@@ -7,11 +7,14 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
 
 > **Note**
 >
-> This project was inspired from Karina Samsonova's data portfolio work featured on her [YouTube channel](https://www.youtube.com/watch?v=U0I3HEnTAWk&ab_channel=KarinaDataScientist). Her comprehensive tutorial on building an interactive Excel dashboard provided guidance throughout my learning journey. 
+> This project was guided by a tutorial from Ismaila Omeiza M. - Data with Decision [YouTube channel](https://www.youtube.com/watch?v=VxOOt2dP8Jw&ab_channel=DatawithDecision). which provided clear, structured instruction on conducting sales analysis using Excel. The hands-on walkthrough helped deepen my understanding of dashboard design and data storytelling using transactional data
 >
 > Original Project:
 > 
-> Title: Data Analysis Project in Excel - Build Interactive Dashboard. Author: Karina Samsonova Platform: [YouTube](https://www.youtube.com/watch?v=U0I3HEnTAWk&ab_channel=KarinaDataScientist)
+> Title: Data Analysis Project in Excel - Build Interactive Dashboard. Author: Ismaila Omeiza M. - Data with Decision. Platform: [YouTube](https://www.youtube.com/@datalab365).
 >
-> This project enhanced my analytical capabilities and expanded my proficiency in data visualisation. Full recognition for the original concept and methodological approach belongs to Karina Samsonova. Her work can be explored further via her [YouTube Channel](https://www.youtube.com/@karinadatascientist) and [LinkedIn](https://www.linkedin.com/in/karina-samsonova/) profile.
+> The original tutorial offered an excellent foundation for building practical data analysis skills. Full credit goes to Data with Decision for the methodology, design approach, and dataset structure. You can explore more of their content on their [YouTube Channel](https://www.youtube.com/@datalab365).
 <br/>
+
+
+
