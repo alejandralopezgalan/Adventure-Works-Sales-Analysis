@@ -56,4 +56,13 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 
 The approach bridges foundational data skills with professional-level presentation, transforming raw transactional data into accessible and insightful business intelligence.
 
+### Key Findings
+
+
+### Recommendations
+
+
+## Introduction
+### Business Problem
+
 
