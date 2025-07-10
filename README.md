@@ -28,7 +28,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
 - [Methodology](#methodology)
   - [Data Source](#data-source)
   - [Tools](#tools)
-  - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+  - [Data Cleaning and Transformation](#Data-cleaning-and-transformation)
   - [Data Analysis](#data-analysis)
   - [Excel Formulae](#excel-formulae)
   - [Data Visualisation](#data-visualisation)
@@ -94,6 +94,17 @@ All tables form an integrated data model that enables robust cross-dimensional a
 - Microsoft Excel: Utilised for exploring, cleaning, transforming, and visualising the data through an interactive dashboard. The project also incorporates Power Query to load and shape multiple relational tables efficiently, forming the foundation of the data model
 
 ### Data Cleaning and Transformation
+Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, and select only the columns relevant to the dashboard analysis. 
+
+**Selected Columns for Analysis**
+From each table, only the fields necessary for visualisation and performance insights were retained:
+- **FactInternetSales:** ProductKey	OrderDateKey	DueDateKey	ShipDateKey	CustomerKey	SalesTerritoryKey	OrderQuantity	UnitPrice	Cost	
+
+- **DimCustomer:** 
+- **DimDate:** 
+- **DimProduct:** 
+- **DimGeography:** 
+- **DimSalesTerritory:** 
 
 
 
