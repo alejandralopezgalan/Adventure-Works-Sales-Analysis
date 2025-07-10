@@ -1,2 +1,6 @@
-# Adventure-Works-Sales-Analysis
-An analysis on four years of transactional data from the fictional company Adventure Works
+# Adventure Works Sales Analysis
+Excel-based analysis of four years of Adventure Works transactional data
+
+<img src="assets/img/project5_ecommerce.png" />
+
+Image from [storyset](https://storyset.com/search?q=online%20shopping)
