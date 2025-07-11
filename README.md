@@ -96,12 +96,13 @@ All tables form an integrated data model that enables robust cross-dimensional a
 Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
 
 #### FactInternetSales
-- The selected columns were: ProductKey,	OrderDateKey,	DueDateKey,	ShipDateKey,	CustomerKey,	SalesTerritoryKey,	OrderQuantity,	UnitPrice,	ProductStandardCost (renamed as Cost), and OrderDate 
-- A new column was created: TotalRevenue = [OrderQuantity]*[UnitPrice]
-- TotalRevenue, Cost, and UnitPrice were transformed to Currency Type Variable
-- Cost of Goods Sold was created with the following formula: COGS = [OrderQuantity]*[Cost] and transformed to a Currency Type Variable
-- Total Profit was calculated using the following formula: TotalProfit = [TotalRevenue]-[COGS] and transformed to a Currency Type Variable
-- A conditional variable was created using the following formula: Product Price Type <= 150 then "Less Expensive" else "Expensive" and transformed to Text type variable
+The selected columns were: ProductKey,	OrderDateKey,	DueDateKey,	ShipDateKey,	CustomerKey,	SalesTerritoryKey,	OrderQuantity,	UnitPrice,	ProductStandardCost (renamed as Cost), and OrderDate.
+A new column was created: TotalRevenue = [OrderQuantity]*[UnitPrice].
+
+TotalRevenue, Cost, and UnitPrice were transformed to Currency Type Variable
+Cost of Goods Sold was created with the following formula: COGS = [OrderQuantity]*[Cost] and transformed to a Currency Type Variable
+Total Profit was calculated using the following formula: TotalProfit = [TotalRevenue]-[COGS] and transformed to a Currency Type Variable
+A conditional variable was created using the following formula: Product Price Type <= 150 then "Less Expensive" else "Expensive" and transformed to Text type variable
   
 
   
