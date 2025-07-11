@@ -99,17 +99,17 @@ Power Query was used to load the six relational tables from the AdventureWorks w
 The following columns were selected from the `FactInternetSales` table to support performance analysis: 
 `ProductKey`, `OrderDateKey`, `DueDateKey`, `ShipDateKey`, `CustomerKey`, `SalesTerritoryKey`, `OrderQuantity`, `UnitPrice`, `ProductStandardCost` (renamed as `Cost`), and `OrderDate`.
 Several calculated fields were added to enrich the dataset:
-- `TotalRevenue`: Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
+- `TotalRevenue`. Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
 - Cost of Goods Sold (`COGS`): Calculated using `OrderQuantity * Cost`, this metric estimates product-level expenditure. It was also formatted as a Currency-type variable.
-- `TotalProfit`: Computed with the formula `TotalRevenue – COGS`, representing net profit per transaction. This field was formatted as Currency.
-- `Product Price Type`: A conditional text field categorising products based on unit price, if UnitPrice ≤ 150 then "Less Expensive", else "Expensive". It was formatted as a Text-type variable to enable segmentation.
+- `TotalProfit`. Computed with the formula `TotalRevenue – COGS`, representing net profit per transaction. This field was formatted as Currency.
+- `Product Price Type`. A conditional text field categorising products based on unit price, if UnitPrice ≤ 150 then "Less Expensive", else "Expensive". It was formatted as a Text-type variable to enable segmentation.
 
 #### DimCustomer
 The following columns were retained from the `DimCustomer` table to support performance analysis: 
 `CustomerKey`,	`GeographyKey`,	`CustomerAlternateKey`,	`BirthDate`,	and `Gender`.
 Additional calculated fields were introduced to enhance segmentation and demographic insights:
-- `Full Name`: Created by combining the `FirstName` and `LastName` fields into a single text variable
-- `Customer Age`: - Derived using a Power Query formula to calculate the customer’s age based on their `BirthDate`
+- `Full Name`. Created by combining the `FirstName` and `LastName` fields into a single text variable
+- `Customer Age`. Derived using a Power Query formula to calculate the customer’s age based on their `BirthDate`
 ```
 = Table.AddColumn(#"Choose Column", "Customer Age", each 
   let 
@@ -121,8 +121,8 @@ Additional calculated fields were introduced to enhance segmentation and demogra
     Years)
 ```
 
-- `Age Group`: - A conditional Text-type variable categorising customers into age bands using the following logic:
-```
+- `Age Group`. A conditional Text-type variable categorising customers into age bands using the following logic:
+```Powerquery
 = Table.AddColumn(#"Changed Type1", "Age Group", each 
   if [Customer Age] <= 24 then "0–24" 
   else if [Customer Age] <= 29 then "25–29" 
@@ -133,18 +133,32 @@ Additional calculated fields were introduced to enhance segmentation and demogra
   else "50 Plus")
 ```
 
+#### DimDate
+From the `DimDate` table only the `FullDateAlternateKey` field was retained, and renamed as `Date`.  to simplify the time-based analysis. Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
+- `Year`. Extracted using Year([Date]) and formatted as an Integer-type variable. Only data from 2011 onward was included, excluding 2009 and 2010 from the analysis.
+- `Month Number`. Derived using Date.Month([Date]) to support chronological sorting, formatted as Integer.
+- `Month Name`. Created with Date.MonthName([Date]) and truncated to the first three characters (e.g. Jan, Feb, Mar), formatted as Text-type.
+- `Day Name`. Obtained via Date.DayOfWeekName([Date]) and shortened to three-letter labels (e.g. Mon, Tue, Wed), formatted as Text.
+- `WeekTypes`. A conditional text column categorising the day as either Weekend or Weekday:
+```Powerquery
+if [Day Name] = "Sun" then "Weekend"
+else if [Day Name] = "Sat" then "Weekend"
+else "Weekday"
+```
+- `Quarter`, Generated using Date.QuarterOfYear([Date]), formatted as Integer with a prefix to display in dashboard visuals as Qtr-1, Qtr-2, Qtr-3, or Qtr-4.
+- `DayNumber`. Extracted using Date.DayOfWeek([Date]), formatted as Integer to support ordering of weekdays in charts and slicers.
 
 
-
-- **DimDate:** 
-
-- **DimProduct:** ProductKey,	and Color
+#### DimProduct
+`ProductKey`,	and `Color`
 
   
-- **DimGeography:** GeographyKey,	City,	and SalesTerritoryKey
+#### DimGeography
+GeographyKey,	City,	and SalesTerritoryKey
 
 
-- **DimSalesTerritory:** SalesTerritoryKey,	SalesTerritoryAlternateKey	SalesTerritoryRegion	SalesTerritoryCountry	and SalesTerritoryGroup.
+#### DimSalesTerritory
+SalesTerritoryKey,	SalesTerritoryAlternateKey	SalesTerritoryRegion	SalesTerritoryCountry	and SalesTerritoryGroup.
 
 
 
