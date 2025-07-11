@@ -80,12 +80,12 @@ The dataset used in this project was provided as part of a tutorial from the Dat
 
 ### Data Overview
 The project utilises the [AdventureWorks.xlsx](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_AdventureWorks_Database.xlsx) workbook, which contains six relational tables:
-- **FactInternetSales:** The central fact table housing over 60,000 rows of transactional records, linked to other tables through keys such as ProductKey, CustomerKey, SalesTerritoryKey, and date fields. It stores detailed sales metrics including quantities, discounts, costs, and revenue values. 
-- **DimCustomer:** Provides detailed customer demographics and contact attributes, comprising 18,484 individual records. This dimension links to the fact table via CustomerKey, and includes variables such as full name, birth date, marital status, income level, multilingual education and occupation details, geographical location, purchase history, and commuting distance. It enriches the sales model with personal and regional context for more targeted analysis.
-- **DimDate:** A dedicated calendar dimension comprising 1,461 date records. It supports time-based analysis by providing structured fields such as full date values, day and month names in multiple languages (English, Spanish, French), and hierarchical attributes for calendar and fiscal periods.
-- **DimProduct:** Contains 606 records detailing product-level attributes used for sales analysis. This table is linked to the central fact table via ProductKey, and includes fields for product category, colour, size, cost, list pricing, manufacturing specifics, and availability dates. It also features multilingual product descriptions, supporting accessibility and localisation across global markets.
-- **DimGeography:** Consists of 655 records offering geographical context for customer data. This dimension includes city, state or province, postal code, and country fields, along with regional identifiers that support location-based analysis. Country names are provided in English, Spanish, and French, enabling multilingual reporting and global segmentation. 
-- **DimSalesTerritory:** Comprises 10 records that provide a higher-level classification of global sales regions. This dimension includes fields for territory name, country grouping, and territory image identifiers. It enables segmentation and comparative analysis across broader geographical markets, supporting strategic insight into regional performance.
+- `FactInternetSales`: The central fact table housing over 60,000 rows of transactional records, linked to other tables through keys such as `ProductKey`, `CustomerKey`, `SalesTerritoryKey`, and date fields. It stores detailed sales metrics including quantities, discounts, costs, and revenue values. 
+- `DimCustomer`: Provides detailed customer demographics and contact attributes, comprising 18,484 individual records. This dimension links to the fact table via CustomerKey, and includes variables such as full name, birth date, marital status, income level, multilingual education and occupation details, geographical location, purchase history, and commuting distance. It enriches the sales model with personal and regional context for more targeted analysis.
+- `DimDate`: A dedicated calendar dimension comprising 1,461 date records. It supports time-based analysis by providing structured fields such as full date values, day and month names in multiple languages (English, Spanish, French), and hierarchical attributes for calendar and fiscal periods.
+- `DimProduct`: Contains 606 records detailing product-level attributes used for sales analysis. This table is linked to the central fact table via ProductKey, and includes fields for product category, colour, size, cost, list pricing, manufacturing specifics, and availability dates. It also features multilingual product descriptions, supporting accessibility and localisation across global markets.
+- `DimGeography`: Consists of 655 records offering geographical context for customer data. This dimension includes city, state or province, postal code, and country fields, along with regional identifiers that support location-based analysis. Country names are provided in English, Spanish, and French, enabling multilingual reporting and global segmentation. 
+- `DimSalesTerritory`: Comprises 10 records that provide a higher-level classification of global sales regions. This dimension includes fields for territory name, country grouping, and territory image identifiers. It enables segmentation and comparative analysis across broader geographical markets, supporting strategic insight into regional performance.
 
 All tables form an integrated data model that enables robust cross-dimensional analysis. The dataset is fictional and provided exclusively for educational purposes, aligning with the structure and learning goals outlined in the original YouTube tutorial and this project. It serves as a practical foundation for developing analytical capabilities, data visualisation skills, and professional dashboard design in a simulated business context.
 
@@ -96,13 +96,14 @@ All tables form an integrated data model that enables robust cross-dimensional a
 Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
 
 #### FactInternetSales
-The selected columns were: ProductKey,	OrderDateKey,	DueDateKey,	ShipDateKey,	CustomerKey,	SalesTerritoryKey,	OrderQuantity,	UnitPrice,	ProductStandardCost (renamed as Cost), and OrderDate.
-A new column was created: TotalRevenue = [OrderQuantity]*[UnitPrice].
+The following columns were selected from the `FactInternetSales` table to support performance analysis: 
+`ProductKey`, `OrderDateKey`, `DueDateKey`, `ShipDateKey`, `CustomerKey`, `SalesTerritoryKey`, `OrderQuantity`, `UnitPrice`, `ProductStandardCost` (renamed as `Cost`), and `OrderDate`.
+Several calculated fields were added to enrich the dataset:
+- `TotalRevenue`: Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
+- Cost of Goods Sold (`COGS`): Calculated using `OrderQuantity * Cost`, this metric estimates product-level expenditure. It was also formatted as a Currency-type variable.
+- `TotalProfit`: Computed with the formula `TotalRevenue – COGS`, representing net profit per transaction. This field was formatted as Currency.
+- `Product Price Type`: A conditional text field categorising products based on unit price, if UnitPrice ≤ 150 then "Less Expensive", else "Expensive". It was formatted as a Text-type variable to enable segmentation.
 
-TotalRevenue, Cost, and UnitPrice were transformed to Currency Type Variable
-Cost of Goods Sold was created with the following formula: COGS = [OrderQuantity]*[Cost] and transformed to a Currency Type Variable
-Total Profit was calculated using the following formula: TotalProfit = [TotalRevenue]-[COGS] and transformed to a Currency Type Variable
-A conditional variable was created using the following formula: Product Price Type <= 150 then "Less Expensive" else "Expensive" and transformed to Text type variable
   
 
   
