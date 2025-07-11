@@ -80,13 +80,12 @@ The dataset used in this project was provided as part of a tutorial from the Dat
 
 ### Data Overview
 The project utilises the [AdventureWorks.xlsx](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_AdventureWorks_Database.xlsx) workbook, which contains six relational tables:
-- **FactInternetSales:** The central fact table containing transactional records, linked to other tables through keys such as ProductKey, CustomerKey, SalesTerritoryKey, and date fields. It stores detailed sales metrics including quantities, discounts, costs, and revenue values.
-- **DimCustomer:** Contains customer demographics and contact information, such as name, birth date, marital status, education level (in multiple languages), occupation, income, address, purchase history, and commute distance. Linked via CustomerKey.
-- **DimDate:** A calendar table used for time-based analysis. Includes fields for full dates, day names (English, Spanish, French), month details, calendar and fiscal periods, and date keys to support flexible filtering.
-- **DimProduct:** Stores product-level attributes including category, colour, size, cost, pricing, manufacturing details, multilingual descriptions, and availability dates. Linked to transactions through ProductKey.
-- **DimGeography:** Provides geographical context for customers, with data on city, state, country, postal code, and regional identifiers. Includes country names in English, Spanish, and French.
-- **DimSalesTerritory:** Offers higher-level breakdowns of global sales regions, including territory name, country grouping, and visual identifiers to support regional analysis.
-
+- **FactInternetSales:** The central fact table housing over 60,000 rows of transactional records, linked to other tables through keys such as ProductKey, CustomerKey, SalesTerritoryKey, and date fields. It stores detailed sales metrics including quantities, discounts, costs, and revenue values. 
+- **DimCustomer:** Provides detailed customer demographics and contact attributes, comprising 18,484 individual records. This dimension links to the fact table via CustomerKey, and includes variables such as full name, birth date, marital status, income level, multilingual education and occupation details, geographical location, purchase history, and commuting distance. It enriches the sales model with personal and regional context for more targeted analysis.
+- **DimDate:** A dedicated calendar dimension comprising 1,461 date records. It supports time-based analysis by providing structured fields such as full date values, day and month names in multiple languages (English, Spanish, French), and hierarchical attributes for calendar and fiscal periods.
+- **DimProduct:** Contains 606 records detailing product-level attributes used for sales analysis. This table is linked to the central fact table via ProductKey, and includes fields for product category, colour, size, cost, list pricing, manufacturing specifics, and availability dates. It also features multilingual product descriptions, supporting accessibility and localisation across global markets.
+- **DimGeography:** Consists of 655 records offering geographical context for customer data. This dimension includes city, state or province, postal code, and country fields, along with regional identifiers that support location-based analysis. Country names are provided in English, Spanish, and French, enabling multilingual reporting and global segmentation. 
+- **DimSalesTerritory:** Comprises 10 records that provide a higher-level classification of global sales regions. This dimension includes fields for territory name, country grouping, and territory image identifiers. It enables segmentation and comparative analysis across broader geographical markets, supporting strategic insight into regional performance.
 
 All tables form an integrated data model that enables robust cross-dimensional analysis. The dataset is fictional and provided exclusively for educational purposes, aligning with the structure and learning goals outlined in the original YouTube tutorial and this project. It serves as a practical foundation for developing analytical capabilities, data visualisation skills, and professional dashboard design in a simulated business context.
 
@@ -94,17 +93,31 @@ All tables form an integrated data model that enables robust cross-dimensional a
 - Microsoft Excel: Utilised for exploring, cleaning, transforming, and visualising the data through an interactive dashboard. The project also incorporates Power Query to load and shape multiple relational tables efficiently, forming the foundation of the data model
 
 ### Data Cleaning and Transformation
-Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, and select only the columns relevant to the dashboard analysis. 
+Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
 
-**Selected Columns for Analysis**
-From each table, only the fields necessary for visualisation and performance insights were retained:
-- **FactInternetSales:** ProductKey	OrderDateKey	DueDateKey	ShipDateKey	CustomerKey	SalesTerritoryKey	OrderQuantity	UnitPrice	Cost	
+#### FactInternetSales
+- The selected columns were: ProductKey,	OrderDateKey,	DueDateKey,	ShipDateKey,	CustomerKey,	SalesTerritoryKey,	OrderQuantity,	UnitPrice,	ProductStandardCost (renamed as Cost), and OrderDate 
+- A new column was created: TotalRevenue = [OrderQuantity]*[UnitPrice]
+- TotalRevenue, Cost, and UnitPrice were transformed to Currency Type Variable
+- Cost of Goods Sold was created with the following formula: COGS = [OrderQuantity]*[Cost] and transformed to a Currency Type Variable
+- Total Profit was calculated using the following formula: TotalProfit = [TotalRevenue]-[COGS] and transformed to a Currency Type Variable
+- A conditional variable was created using the following formula: Product Price Type <= 150 then "Less Expensive" else "Expensive" and transformed to Text type variable
+  
 
-- **DimCustomer:** 
+  
+- **DimCustomer:** CustomerKey,	GeographyKey,	CustomerAlternateKey,	BirthDate,	and Gender	
+
 - **DimDate:** 
-- **DimProduct:** 
-- **DimGeography:** 
-- **DimSalesTerritory:** 
+
+- **DimProduct:** ProductKey,	and Color
+
+  
+- **DimGeography:** GeographyKey,	City,	and SalesTerritoryKey
+
+
+- **DimSalesTerritory:** SalesTerritoryKey,	SalesTerritoryAlternateKey	SalesTerritoryRegion	SalesTerritoryCountry	and SalesTerritoryGroup.
+
+
 
 
 
