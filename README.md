@@ -104,10 +104,21 @@ Several calculated fields were added to enrich the dataset:
 - `TotalProfit`: Computed with the formula `TotalRevenue – COGS`, representing net profit per transaction. This field was formatted as Currency.
 - `Product Price Type`: A conditional text field categorising products based on unit price, if UnitPrice ≤ 150 then "Less Expensive", else "Expensive". It was formatted as a Text-type variable to enable segmentation.
 
-  
-
-  
-- **DimCustomer:** CustomerKey,	GeographyKey,	CustomerAlternateKey,	BirthDate,	and Gender	
+#### DimCustomer
+The following columns were selected from the `DimCustomer` table to support performance analysis: 
+`CustomerKey`,	`GeographyKey`,	`CustomerAlternateKey`,	`BirthDate`,	and `Gender`.
+- A new colum was created: `Full Name` combined `FirstName` and `LastName`
+- `Customer Age` was created using the following DAX formula. This variable was set as an Integer-type variable:
+= Table.AddColumn(#"Choose Column", "Customer Age", each let
+source = #date[BirthDate],
+Today = Date.From(DateTime.LocalNow()),
+Age = Duration.From(Today - [BirthDate]), 
+Years = Duration.From(Duration.From(Age) / 
+#duration (365,0,0,0))
+in
+Years)
+- `Age Group`: A conditional text field categorising the age of the customers based on the following formula
+= Table.AddColumn(#"Changed Type1", "Age Group", each if [Customer Age] <= 24 then "0-24" else if [Customer Age] <= 29 then "25-29" else if [Customer Age] <= 34 then "30-34" else if [Customer Age] <= 39 then "35-39" else if [Customer Age] <= 44 then "40-44" else if [Customer Age] <= 49 then "45-49" else "50 Plus")
 
 - **DimDate:** 
 
