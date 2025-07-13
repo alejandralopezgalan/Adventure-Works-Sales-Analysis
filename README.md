@@ -182,6 +182,16 @@ This sheet presents a concise year-over-year analysis of Adventure Works sales d
 - Above-Average Profit Analysis: In 2007 and 2008, profits exceeded the calculated four-year average (~$31.57M), contributing a combined $84.7M or 67.1% of total profit during the period.
 
 
+##### Pivot_Product Analysis
+This sheet presents a time-based breakdown of Total Profit for a selected year, offering insight into seasonal, weekly, and daily performance patterns. While results vary depending on the year chosen, the following summary reflects trends observed for 2006
+- Top-performing months: May ($3.09M), March ($2.87M), and June ($2.83M) collectively contributed 47.5% of annual profit, indicating a strong mid-year surge
+- Seasonal Dips: November ($1.42M) and September ($1.59M) returned the lowest monthly profits, suggesting potential seasonal slowdowns.
+- Quarterly Breakdown: Q2 led the year with $8.65M (31% of total profit), followed by Q1 ($7.76M). Profit tapered slightly in Q3 ($6.02M) and Q4 ($5.74M), reinforcing mid-year peak performance.
+- Day-of-Week Trends: Monday ($4.43M), Sunday ($4.12M), and Friday ($4.21M) were the top contributors, accounting for 45.2% of annual profit. Wednesday and Thursday showed comparatively lower results.
+- Weekday vs Weekend Split: Weekdays generated 71.91% of total profit ($20.26M), while weekends accounted for 28.09% ($7.91M). Despite the volume difference, margin consistency suggests that weekend transactions remained equally profitable.
+
+
+
 
 
 
