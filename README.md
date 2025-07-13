@@ -175,6 +175,12 @@ All pivot tables, calculations, and dashboards are available in the [Adventure_W
 
 ##### Pivot_ProfitByYear
 This sheet presents a concise year-over-year analysis of Adventure Works sales data from 2005 to 2008, based on key financial and transactional metrics. 
+- Steady Growth: Revenue rose from $33.37M in 2005 to over $101M in both 2007 and 2008, with corresponding increases in transactions and order quantities.
+- Profitability: Profit margins remained consistently above 40%, with Total Profit peaking in 2007 at $42.55M and holding strong in 2008 at $42.16M.
+- Transaction Volume: Transaction counts surged from 1.01K in 2005 to 32.27K by 2008, illustrating significant operational scale-up.
+- Product Dynamics (2005 snapshot): Of 606 products, only 25 remained unsold, implying an almost complete sales conversion.
+- Above-Average Profit Analysis: In 2007 and 2008, profits exceeded the calculated four-year average (~$31.57M), contributing a combined $84.7M or 67.1% of total profit during the period.
+
 
 
 
