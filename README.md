@@ -167,9 +167,7 @@ The following fields were retained from the `DimSalesTerritory` table to support
 All entries containing `NA` values were excluded to ensure consistency and accuracy in territorial segmentation.
 
 ### Data Analysis
-Pivot tables were used to uncover sales performance patterns, customer segmentation insights, and product profitability across regions and time periods.
-
-All pivot tables, calculations, and dashboards are available in the [Adventure_Works_Sales_Analysis.xlsm](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm) file within the repository.
+Pivot tables were used to uncover sales performance patterns, customer segmentation insights, and product profitability across regions and time periods. All pivot tables, calculations, and dashboards are available in the [Adventure_Works_Sales_Analysis.xlsm](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm) file within the repository.
 
 #### Pivot Table Sheets
 
@@ -181,14 +179,30 @@ This sheet presents a concise year-over-year analysis of Adventure Works sales d
 - Product Dynamics (2005 snapshot): Of 606 products, only 25 remained unsold, implying an almost complete sales conversion.
 - Above-Average Profit Analysis: In 2007 and 2008, profits exceeded the calculated four-year average (~$31.57M), contributing a combined $84.7M or 67.1% of total profit during the period.
 
-
-##### Pivot_Product Analysis
+##### Pivot_ProfitByMonth-Day-Qtr
 This sheet presents a time-based breakdown of Total Profit for a selected year, offering insight into seasonal, weekly, and daily performance patterns. While results vary depending on the year chosen, the following summary reflects trends observed for 2006
 - Top-performing months: May ($3.09M), March ($2.87M), and June ($2.83M) collectively contributed 47.5% of annual profit, indicating a strong mid-year surge
 - Seasonal Dips: November ($1.42M) and September ($1.59M) returned the lowest monthly profits, suggesting potential seasonal slowdowns.
 - Quarterly Breakdown: Q2 led the year with $8.65M (31% of total profit), followed by Q1 ($7.76M). Profit tapered slightly in Q3 ($6.02M) and Q4 ($5.74M), reinforcing mid-year peak performance.
 - Day-of-Week Trends: Monday ($4.43M), Sunday ($4.12M), and Friday ($4.21M) were the top contributors, accounting for 45.2% of annual profit. Wednesday and Thursday showed comparatively lower results.
-- Weekday vs Weekend Split: Weekdays generated 71.91% of total profit ($20.26M), while weekends accounted for 28.09% ($7.91M). Despite the volume difference, margin consistency suggests that weekend transactions remained equally profitable.
+- Weekday vs Weekend Split: Weekdays generated 71.91% of total profit ($20.26M), while weekends represented 28.09% ($7.91M). Despite the volume difference, margin consistency suggests that weekend transactions remained equally profitable.
+
+##### Pivot_Product_Analysis
+This sheet offers a deep dive into product-level profitability, highlighting which items contributed most to overall profit during the analysed period. Trends may shift annually; however, this overview focuses on data observed during 2006.
+- Top-Performing Products: Five variants of Road-150 Red (sizes 44–62) emerged as the leading contributors, generating a combined $12.38M in total profit.
+- High Sales Conversion: The Top 5 Products alone delivered over $12M in profit, representing a significant portion of total earnings. These products also dominated both quantity sold and frequency of transactions, indicating high demand and strong market placement.
+- Colour & Price Segmentation: Products were grouped by colour category (e.g. Red, Black, Silver) and by price type (Less Expensive vs Expensive) to uncover purchasing behaviour. Red-coloured products were consistently high performers across both profit and quantity metrics.
+
+##### Pivot_Customers_Analysis
+This sheet delivers a comprehensive customer profitability analysis, integrating demographic, transactional, and geographic insights. Here’s a concise breakdown for 2006:
+- Top Customers: The five highest-earning customers contributed a combined $1.38M in profit, underscoring the value of targeted relationship strategies.
+- Customer Demographics:
+  - Total Customers: 2,577,
+  - Average Age: 46 years
+  - Gender Split: Female with $14.48M in profit, Male with $13.97M in profit. Gender contribution is balanced, with a slight edge in profit generation from female customers.
+  - Age Group Performance: 50 Plus dominates with $11.51M, contributing over 48% of total customer profit.
+- Geographic Distribution: Top Countries were Australia ($9.9M) and United States: ($9.0M). United Kingdom, Canada, Germany, and France followed with $2.2M–$2.7M each.
+
 
 
 
