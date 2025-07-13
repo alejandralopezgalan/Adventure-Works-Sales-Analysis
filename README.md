@@ -96,7 +96,7 @@ All tables form an integrated data model that enables robust cross-dimensional a
 Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
 
 #### FactInternetSales
-The following columns were selected from the `FactInternetSales` table to support performance analysis: 
+ Performance insights were developed using the following variables from the `FactInternetSales` dataset:
 `ProductKey`, `OrderDateKey`, `DueDateKey`, `ShipDateKey`, `CustomerKey`, `SalesTerritoryKey`, `OrderQuantity`, `UnitPrice`, `ProductStandardCost` (renamed as `Cost`), and `OrderDate`.
 Several calculated fields were added to enrich the dataset:
 - `TotalRevenue`: Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
@@ -134,7 +134,7 @@ Additional fields were introduced to enhance segmentation and demographic insigh
 ```
 
 #### DimDate
-From the `DimDate` table only the `FullDateAlternateKey` field was retained, and renamed as `Date`.  to simplify the time-based analysis. Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
+From the `DimDate` table only the `FullDateAlternateKey` field was included, and renamed as `Date`.  to simplify the time-based analysis. Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
 - `Year`: Extracted using Year([Date]) and formatted as an Integer-type variable. Only data from 2011 onward was included, excluding 2009 and 2010 from the analysis.
 - `Month Number`: Derived using Date.Month([Date]) to support chronological sorting, formatted as Integer.
 - `Month Name`: Created with Date.MonthName([Date]) and truncated to the first three characters (e.g. Jan, Feb, Mar), formatted as Text-type.
@@ -150,14 +150,14 @@ else "Weekday"
 
 
 #### DimProduct
-From the `DimProduct` table, the following fields were retained for analysis:
+The analysis incorporated these columns from the `DimProduct` dataset:
 - `ProductKey`
 - `EnglishProductName` (renamed as `ProductName`)
 - `Color`
 Missing values in the `Color` column were replaced with the label `Unspecified` to ensure consistency in product categorisation and visual filtering.
 
 #### DimGeography
-From the `DimGeography` the following fields were selected to support regional analysis within the dashboard:
+Key geographical fields were extracted from `DimGeography` to enable location-based insights
 - `City` – Provides local-level geographical context
 - `EnglishCountryRegionName` – Renamed as `Country` for clarity and consistency
 - `SalesTerritoryKey` – Enabled connection to higher-level territorial classification
