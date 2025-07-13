@@ -171,6 +171,11 @@ Pivot tables were used to uncover sales performance patterns, customer segmentat
 
 All pivot tables, calculations, and dashboards are available in the [Adventure_Works_Sales_Analysis.xlsm](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm) file within the repository.
 
+#### Pivot Table Sheets
+
+##### Pivot_ProfitByYear
+This sheet presents a concise year-over-year analysis of Adventure Works sales data from 2005 to 2008, based on key financial and transactional metrics. 
+
 
 
 
