@@ -30,7 +30,6 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Tools](#tools)
   - [Data Cleaning and Transformation](#Data-cleaning-and-transformation)
   - [Data Analysis](#data-analysis)
-  - [Excel Formulae](#excel-formulae)
   - [Data Visualisation](#data-visualisation)
 - [Insights](#insights)
 - [Action Plan](#action-plan)
@@ -167,8 +166,10 @@ The following fields were retained from the `DimSalesTerritory` table to support
 `SalesTerritoryKey`,	`SalesTerritoryAlternateKey`,	`SalesTerritoryRegion`,	`SalesTerritoryCountry`,	and `SalesTerritoryGroup`. 
 All entries containing `NA` values were excluded to ensure consistency and accuracy in territorial segmentation.
 
+### Data Analysis
+Pivot tables were used to uncover sales performance patterns, customer segmentation insights, and product profitability across regions and time periods.
 
-
+All pivot tables, calculations, and dashboards are available in the [Adventure_Works_Sales_Analysis.xlsm](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm) file within the repository.
 
 
 
