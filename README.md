@@ -122,7 +122,7 @@ Additional fields were introduced to enhance segmentation and demographic insigh
 ```
 
 - `Age Group`: A conditional Text-type variable categorising customers into age bands using the following logic:
-``` Powerquery
+``` 
 = Table.AddColumn(#"Changed Type1", "Age Group", each 
   if [Customer Age] <= 24 then "0–24" 
   else if [Customer Age] <= 29 then "25–29" 
@@ -140,7 +140,7 @@ From the `DimDate` table only the `FullDateAlternateKey` field was retained, and
 - `Month Name`: Created with Date.MonthName([Date]) and truncated to the first three characters (e.g. Jan, Feb, Mar), formatted as Text-type.
 - `Day Name`: Obtained via Date.DayOfWeekName([Date]) and shortened to three-letter labels (e.g. Mon, Tue, Wed), formatted as Text.
 - `WeekTypes`: A conditional text column categorising the day as either Weekend or Weekday:
-```Powerquery
+```
 if [Day Name] = "Sun" then "Weekend"
 else if [Day Name] = "Sat" then "Weekend"
 else "Weekday"
