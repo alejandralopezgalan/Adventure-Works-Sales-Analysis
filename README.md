@@ -197,13 +197,14 @@ This sheet offers a deep dive into product-level profitability, highlighting whi
 This sheet delivers a comprehensive customer profitability analysis, integrating demographic, transactional, and geographic insights. Here’s a concise breakdown for 2006:
 - Top Customers: The five highest-earning customers contributed a combined $1.38M in profit, underscoring the value of targeted relationship strategies.
 - Customer Demographics:
-  - Total Customers: 2,577,
+  - Total Customers: 2,577
   - Average Age: 46 years
   - Gender Split: Female with $14.48M in profit, Male with $13.97M in profit. Gender contribution is balanced, with a slight edge in profit generation from female customers.
   - Age Group Performance: 50 Plus dominates with $11.51M, contributing over 48% of total customer profit.
 - Geographic Distribution: Top Countries were Australia ($9.9M) and United States: ($9.0M). United Kingdom, Canada, Germany, and France followed with $2.2M–$2.7M each.
 
-
+### Data Visualisation
+The results were visualised in two dashboards.
 
 
 
