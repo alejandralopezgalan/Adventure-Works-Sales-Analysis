@@ -206,6 +206,32 @@ This sheet delivers a comprehensive customer profitability analysis, integrating
 ### Data Visualisation
 The results were visualised in two dashboards.
 
+#### Sales Performance & Time-Based Insights
+This interactive dashboard showcases key performance metrics and temporal trends for Adventure Works sales data. It includes filters and visuals that enable users to explore transactional and profitability patterns by date, country, weekday, and quarter.
+The following screenshot display the results of the analysis on the year 2006. 
+
+Key Components:
+- Header Navigation 
+Includes buttons for switching between dashboard views (Time Series, Products & Customers) and resetting filters.
+
+- Summary KPIs
+Displays core metrics such as:
+  - Order Quantity: 28.41K (+46.41% compared to the preious year, 2005)
+  - Total Revenue: $69.48M
+  - Total Profit: $28.18M
+  - Transactions: 2.68K (+45.09% compared to the preious year, 2005)
+  - Profit Margin: 40.6%
+  - Total COGS: $41.31M
+
+- Yearly Profit Comparison: A horizontal bar chart comparing total profit across four years, with 2007 and and 2008 contributing the highest share (67.1%). In this graph it is also possible to select the Revenue or Number of Transacions to be displayed.
+- Monthly Profit Trends (2006): A line graph reveals seasonal patterns in profitability, with peaks in May, March, and June, representing 47.5% of the year's profit.
+- Weekday Profit Breakdown: A vertical bar chart shows profit distribution by day of the week, with Monday, Friday, and Sunday emerging as top contributors.
+- Weekday vs Weekend Analysis: A donut chart indicates that weekdays generated 71.91% of total profit, with weekends accounting for the remaining 28.09%.
+- Quarterly Performance Summary: Each quarter is displayed with its respective contribution, led by Q2 ($8.65M) followed by Q1 ($7.76M).
+- Interactive Filters: 
+
+
+
 
 
 
