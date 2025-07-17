@@ -27,17 +27,13 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Goals](#goals)
 - [Methodology](#methodology)
   - [Data Source](#data-source)
+  - [Data Overview](#data-overview)
   - [Tools](#tools)
-  - [Data Cleaning and Transformation](#Data-cleaning-and-transformation)
+  - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
   - [Data Analysis](#data-analysis)
   - [Data Visualisation](#data-visualisation)
 - [Insights](#insights)
 - [Action Plan](#action-plan)
-  - [1. Customer Acquisition Strategy](#1.Customer-Acquisition-Strategy)
-  - [2. Boosting Sales in Q4](#2.-Boosting-Sales-in-Q4)
-  - [3. Product and Shipping Optimisation](#3.-Product-and-Shipping-Optimisation)
-  - [4. Maximising Regional Performance](#4.-Maximising-Regional-Performance)
-  - [5. Customer Retention Initiatives](#5.-Customer-Retention-Initiatives)
 - [Excel Report](#excel-report)	
 
 
@@ -52,8 +48,6 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - Interactive features that allow users to filter and explore data dynamically
 - Structured insights to support business-oriented decision-making
 - A clear demonstration of analytical thinking and visualisation techniques in Excel
-
-The approach bridges foundational data skills with professional-level presentation, transforming raw transactional data into accessible and insightful business intelligence.
 
 ### Key Findings
 
@@ -228,10 +222,56 @@ Displays core metrics such as:
 - Weekday Profit Breakdown: A vertical bar chart shows profit distribution by day of the week, with Monday, Friday, and Sunday emerging as top contributors.
 - Weekday vs Weekend Analysis: A donut chart indicates that weekdays generated 71.91% of total profit, with weekends accounting for the remaining 28.09%.
 - Quarterly Performance Summary: Each quarter is displayed with its respective contribution, led by Q2 ($8.65M) followed by Q1 ($7.76M).
-- Interactive Filters: 
+
+(**Insert ss here**)
+
+
+#### Product & Customer-Level Profitability 
+This dashboard presents detailed profitability insights across products, customers, and demographic segments for Adventure Works, with results filtered by year. It enables exploration of how individual items and customer groups contribute to overall financial performance.
+Key Components:
+- Top 5 Profitable Products: Road-150 Red (sizes 44–62) dominates, contributing $12.38M collectively, or 43.9% of total profit.
+- Product Summary: Out of 606 available products, only 56 were sold, highlighting an opportunity for inventory optimisation.
+- Profit by Product Colour: 
+  - Red: $16.36M
+  - Black: $7.86M
+  - Silver: $3.39M
+  - Other colours returned no profit, indicating limited customer preference.
+- Price Category Breakdown: Products generating profit were exclusively priced above $150, reflecting a high-value portfolio.
+- Top 5 Customers: Each contributed around $29.76K, totalling 0.5% of overall profit, suggesting a wide and evenly distributed customer base.
+- Customer Demographics:
+  - Total customers: 2,677
+  - Average age: 46
+  - 50 Plus age group: $11.51M (40.8% of profit), showing strong purchasing power in older demographics.
+- Gender-Based Profit Contribution: A near-even split, with a slight edge toward female customer profitability.
+  - Female: 51.4%
+  - Male: 48.6%
+- Geographic Trends: Supported by map visuals highlighting spatial distribution.
+  - Australia & United States: Combined contribution of 65.8% of total profit
+- Year Filter: Allows users to switch between 2005–2008 to compare trends across time.
+- Country Filter: Enables focused analysis by geographic region.
+
+(**Insert ss here**)
+
+
+## Insights
 
 
 
+## Action Plan
+
+
+## Excel Report
+To explore the full analysis and dashboards, access the Excel file via the following [link](). The workbook is organised into two main sections:
+- Pivot Analysis Sheets
+The first four tabs, Pivot_ProfitByYear, Pivot_ProfitByMonth-Day-Qtr, Pivot_Product_Analysis, and Pivot_Customers_Analysis, contain the underlying pivot tables and detailed analytical breakdowns.
+- Dashboard Visuals
+The final two sheets, Time_Series_Dashboard and Products_Customer_Dashboard, feature interactive dashboards with curated plots that illustrate key performance insights across time, product categories, and customer demographics.
+
+
+(**Insert ss here**)
+
+
+(**Insert gif here here**)
 
 
 
