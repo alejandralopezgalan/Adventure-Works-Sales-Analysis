@@ -261,7 +261,7 @@ Key Components:
 
 
 ## Excel Report
-To explore the full analysis and dashboards, access the Excel file via the following [link](). The workbook is organised into two main sections:
+To explore the full analysis and dashboards, access the Excel file via the following [link](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm). The workbook is organised into two main sections:
 - Pivot Analysis Sheets
 The first four tabs, Pivot_ProfitByYear, Pivot_ProfitByMonth-Day-Qtr, Pivot_Product_Analysis, and Pivot_Customers_Analysis, contain the underlying pivot tables and detailed analytical breakdowns.
 - Dashboard Visuals
