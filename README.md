@@ -33,8 +33,10 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Data Analysis](#data-analysis)
   - [Data Visualisation](#data-visualisation)
 - [Insights](#insights)
-  - [Year-over-Year Performance Overview](#year_over_year_performance_overview)
-  - 
+  - [Year-over-Year Performance Overview](#year-over-year-performance-overview)
+  - [Temporal Trends](#temporal-trends)
+  - [Product-Level Insights](#product-level-insights)
+  - [Customer Demographics and Geography](#customer-demographics-and-geography)
 - [Action Plan](#action-plan)
 - [Excel Report](#excel-report)	
 
@@ -256,30 +258,54 @@ Key Components:
 
 ## Insights
 ### Year-over-Year Performance Overview
-- Revenue growth: From $33.37M in 2005 to over $101M in both 2007 and 2008 — highlighting consistent business expansion.
-- Profit peaks: 2007 delivered the highest profit ($42.55M), closely followed by 2008 ($42.16M), together contributing 67.1% of total four-year profit.
-- Operational scale-up: Transactions surged from 1.01K in 2005 to 32.27K by 2008.
-- Product conversion success: In 2005, 25 of 606 products were sold  (4.1%). By contrast, in 2008, sold product increased four times that amount and were highly profitable.
+- Revenue growth: Increased from $33.37M in 2005 to over $101M in 2007 and 2008, reflecting consistent business expansion.
+- Profit peaks: 2007 delivered the highest annual profit ($42.55M), followed closely by 2008 ($42.16M). These two years contributed 67.1% of total profit across the four-year span.
+- Operational scale-up: Total transactions rose from 1.01K in 2005 to 32.27K by 2008, demonstrating significant growth in sales activity.
+- Product conversion success: In 2005, only 25 of 606 products were sold (4.1%). By 2008, the number of sold products quadrupled, with many proving highly profitable.
 
-(**ss here**)
-
- ### Temporal Trends 
-- Top months:
-  - December, November, and October for 2005 and 2007
-  - May, March, and June for 2006
-  - June, May and April for 2008
-  - May, March, and June accounted for 47.5% of 2006 profit
-- Weekday dominance: Weekdays contributed to more than 70% of total profit across the four years analised (2005-2008)
-- The most profitable quarters were
+### Temporal Trends
+- Top months by year:
+  - 2005 & 2007: December, November, October
+  - 2006: May, March, June (47.5% of that year’s profit)
+  - 2008: June, May, April
+- Weekday dominance: - Weekdays consistently contributed over 70% of total profit across all four years. Thursday ranked among the top three most profitable days throughout the entire period
+- Most profitable quarters:
   - Q4 in 2005 ($7.41M)
   - Q2 in 2006 ($8.65M)
-  - Q4 in 2007 ($17.63M).
-  - Q1 in 2008 ($18.44M).
+  - Q4 in 2007 ($17.63M)
+  - Q1 in 2008 ($18.44M)
 
+### Product-Level Insights
+- High-margin strategy: All profitable items were priced above $150, underscoring the effectiveness of premium product positioning.
+- Product concentration: Road-150 Red and Mountain-200 variants each accounted for at least 31% of annual profit, peaking in 2005 with over 75% of that year’s profit.
+- Colour segmentation: Red products were top performers in 2005 and 2006, while black variants led in 2007 and 2008.
+- Inventory scope: Sold products ranged from 25 in 2005 to 102 in 2008, suggesting opportunities for SKU (Stock Keeping Unit) optimisation and targeted product marketing.
 
+### Customer Demographics & Geography
+- Age-based profitability: Customers aged 50+ generated at least 39% of total profit during the analysed period.
+- Gender contribution: Profit was nearly evenly split between male and female customers, with a slight edge toward female profitability.
+- Geographic distribution: Australia and the United States consistently ranked as the top-performing regions, contributing over 60% of total customer profit.
+- Top customers: Each of the five highest-value customers generated at least $29K in profit. 
 
 
 ## Action Plan
+1. Refine Product Portfolio
+- Prioritise high-performing items like Road-150 Red and Mountain-200, which consistently drive yearly profit.
+- Eliminate or rebrand low-selling SKUs, and focus on items priced above $150 to sustain profit margins.
+
+2. Optimise Marketing Timing
+- Launch campaigns during peak months (e.g. May–June, October–December) based on year-specific trends.
+- Target Mondays and Thursdays for promotions, leveraging weekday profitability (>70%).
+
+3. Target Key Demographics
+- Develop tailored messaging for 50+ age group, which contributed nearly 50% of total profit.
+- Maintain inclusive targeting across genders, given their near-equal financial impact.
+
+4. Strengthen Geographic Presence
+- Invest in regional campaigns for Australia and the United States, which generated over 60% of total customer profit.
+
+5. Cultivate Top Customer Relationships
+- Introduce loyalty benefits or premium tiers for top spenders, each generating ~$29K in individual profit.
 
 
 ## Excel Report
