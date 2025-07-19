@@ -54,10 +54,19 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - A clear demonstration of analytical thinking and visualisation techniques in Excel
 
 ### Key Findings
-
+- Consistent Growth: Revenue increased steadily, peaking at over $101M in 2007 and 2008.
+- Product Profitability: Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.
+- Seasonal Peaks: Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.
+- Weekday Advantage: Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.
+- Customer Drivers: The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.
+- Geographic Focus: Australia and the United States accounted for over 60% of total profit.
 
 ### Recommendations
-
+- Optimise Product Strategy: Prioritise high-margin items and streamline low-performing SKUs ( (Stock Keeping Unit)).
+- Align Campaign Timing: Schedule marketing around seasonal and weekday profit peaks.
+- Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits.
+- Expand Regional Efforts: Invest further in high-performing markets like Australia and the U.S.
+- Reward Top Customers: Establish retention programmes for high-profit individual buyers.
 
 ## Introduction
 ### Business Problem
@@ -279,7 +288,7 @@ Key Components:
 - High-margin strategy: All profitable items were priced above $150, underscoring the effectiveness of premium product positioning.
 - Product concentration: Road-150 Red and Mountain-200 variants each accounted for at least 31% of annual profit, peaking in 2005 with over 75% of that year’s profit.
 - Colour segmentation: Red products were top performers in 2005 and 2006, while black variants led in 2007 and 2008.
-- Inventory scope: Sold products ranged from 25 in 2005 to 102 in 2008, suggesting opportunities for SKU (Stock Keeping Unit) optimisation and targeted product marketing.
+- Inventory scope: Sold products ranged from 25 in 2005 to 102 in 2008, suggesting opportunities for SKU optimisation and targeted product marketing.
 
 ### Customer Demographics & Geography
 - Age-based profitability: Customers aged 50+ generated at least 39% of total profit during the analysed period.
@@ -290,23 +299,22 @@ Key Components:
 
 ## Action Plan
 1. Refine Product Portfolio
-- Prioritise high-performing items like Road-150 Red and Mountain-200, which consistently drive yearly profit.
-- Eliminate or rebrand low-selling SKUs, and focus on items priced above $150 to sustain profit margins.
+  - Prioritise high-performing items like Road-150 Red and Mountain-200, which consistently drive yearly profit.
+  - Eliminate or rebrand low-selling SKUs, and focus on items priced above $150 to sustain profit margins.
 
 2. Optimise Marketing Timing
-- Launch campaigns during peak months (e.g. May–June, October–December) based on year-specific trends.
-- Target Mondays and Thursdays for promotions, leveraging weekday profitability (>70%).
+  - Launch campaigns during peak months (e.g. May–June, October–December) based on year-specific trends.
+  - Target Mondays and Thursdays for promotions, leveraging weekday profitability (>70%).
 
 3. Target Key Demographics
-- Develop tailored messaging for 50+ age group, which contributed nearly 50% of total profit.
-- Maintain inclusive targeting across genders, given their near-equal financial impact.
+  - Develop tailored messaging for 50+ age group, which contributed nearly 50% of total profit.
+  - Maintain inclusive targeting across genders, given their near-equal financial impact.
 
 4. Strengthen Geographic Presence
-- Invest in regional campaigns for Australia and the United States, which generated over 60% of total customer profit.
+  - Invest in regional campaigns for Australia and the United States, which generated over 60% of total customer profit.
 
 5. Cultivate Top Customer Relationships
-- Introduce loyalty benefits or premium tiers for top spenders, each generating ~$29K in individual profit.
-
+  - Introduce loyalty benefits or premium tiers for top spenders, each generating ~$29K in individual profit.
 
 ## Excel Report
 To explore the full analysis and dashboards, access the Excel file via the following [link](https://github.com/alejandralopezgalan/Adventure-Works-Sales-Analysis/blob/main/assets/data/Project5_Adventure_Works_Sales_Analysis.xlsm). The workbook is organised into two main sections:
