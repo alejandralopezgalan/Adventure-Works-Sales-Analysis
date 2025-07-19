@@ -223,7 +223,7 @@ Displays core metrics such as:
 - Weekday vs Weekend Analysis: A donut chart indicates that weekdays generated 71.91% of total profit, with weekends accounting for the remaining 28.09%.
 - Quarterly Performance Summary: Each quarter is displayed with its respective contribution, led by Q2 ($8.65M) followed by Q1 ($7.76M).
 
-(**Insert ss here**)
+![dahsboard1](assets/img/project5_Sales_Performance.png)
 
 
 #### Product & Customer-Level Profitability 
@@ -250,7 +250,8 @@ Key Components:
 - Year Filter: Allows users to switch between 2005–2008 to compare trends across time.
 - Country Filter: Enables focused analysis by geographic region.
 
-(**Insert ss here**)
+![dahsboard2](assets/img/project5_Product_Customer-Profitability.png)
+
 
 
 ## Insights
@@ -267,12 +268,7 @@ The first four tabs, Pivot_ProfitByYear, Pivot_ProfitByMonth-Day-Qtr, Pivot_Prod
 - Dashboard Visuals
 The final two sheets, Time_Series_Dashboard and Products_Customer_Dashboard, feature interactive dashboards with curated plots that illustrate key performance insights across time, product categories, and customer demographics.
 
-
-(**Insert ss here**)
-
-
-(**Insert gif here here**)
-
+![excel_report](assets/img/projec5_gif.gif)
 
 
 
