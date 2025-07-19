@@ -48,10 +48,10 @@ The main goal is to develop a functional and visually engaging Excel dashboard t
 
 ### Solution
 This project delivers a comprehensive Excel dashboard tailored for sales data analysis using the Adventure Works dataset. Through a guided methodology, the dashboard offers:
-- Visual representations of profit trends across products, regions, and time periods
-- Interactive features that allow users to filter and explore data dynamically
-- Structured insights to support business-oriented decision-making
-- A clear demonstration of analytical thinking and visualisation techniques in Excel
+- Visual representations of profit trends across products, regions, and time periods.
+- Interactive features that allow users to filter and explore data dynamically.
+- Structured insights to support business-oriented decision-making.
+- A clear demonstration of analytical thinking and visualisation techniques in Excel.
 
 ### Key Findings
 - Consistent Growth: Revenue increased steadily, peaking at over $101M in 2007 and 2008.
@@ -62,7 +62,7 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - Geographic Focus: Australia and the United States accounted for over 60% of total profit.
 
 ### Recommendations
-- Optimise Product Strategy: Prioritise high-margin items and streamline low-performing SKUs ( (Stock Keeping Unit)).
+- Optimise Product Strategy: Prioritise high-margin items and streamline low-performing SKUs (Stock Keeping Unit).
 - Align Campaign Timing: Schedule marketing around seasonal and weekday profit peaks.
 - Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits.
 - Expand Regional Efforts: Invest further in high-performing markets like Australia and the U.S.
@@ -96,7 +96,7 @@ The project utilises the [AdventureWorks.xlsx](https://github.com/alejandralopez
 All tables form an integrated data model that enables robust cross-dimensional analysis. The dataset is fictional and provided exclusively for educational purposes, aligning with the structure and learning goals outlined in the original YouTube tutorial and this project. It serves as a practical foundation for developing analytical capabilities, data visualisation skills, and professional dashboard design in a simulated business context.
 
 ### Tools
-- Microsoft Excel: Utilised for exploring, cleaning, transforming, and visualising the data through an interactive dashboard. The project also incorporates Power Query to load and shape multiple relational tables efficiently, forming the foundation of the data model
+- Microsoft Excel: Utilised for exploring, cleaning, transforming, and visualising the data through an interactive dashboard. The project also incorporates Power Query to load and shape multiple relational tables efficiently, forming the foundation of the data model.
 
 ### Data Cleaning and Transformation
 Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
@@ -104,6 +104,7 @@ Power Query was used to load the six relational tables from the AdventureWorks w
 #### FactInternetSales
  Performance insights were developed using the following variables from the `FactInternetSales` dataset:
 `ProductKey`, `OrderDateKey`, `DueDateKey`, `ShipDateKey`, `CustomerKey`, `SalesTerritoryKey`, `OrderQuantity`, `UnitPrice`, `ProductStandardCost` (renamed as `Cost`), and `OrderDate`.
+
 Several calculated fields were added to enrich the dataset:
 - `TotalRevenue`: Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
 - Cost of Goods Sold (`COGS`): Calculated using `OrderQuantity * Cost`, this metric estimates product-level expenditure. It was also formatted as a Currency-type variable.
@@ -113,10 +114,12 @@ Several calculated fields were added to enrich the dataset:
 #### DimCustomer
 The following columns were retained from the `DimCustomer` table to support performance analysis: 
 `CustomerKey`,	`GeographyKey`,	`CustomerAlternateKey`,	`BirthDate`,	and `Gender`.
+
 Additional fields were introduced to enhance segmentation and demographic insights:
-- `Full Name`: Created by combining the `FirstName` and `LastName` fields into a single text variable
-- `Customer Age`: Derived using a Power Query formula to calculate the customer’s age based on their `BirthDate`
-``` Powerquery
+- `Full Name`: Created by combining the `FirstName` and `LastName` fields into a single text variable.
+- `Customer Age`: Derived using a Power Query formula to calculate the customer’s age based on their `BirthDate`.
+
+``` 
 = Table.AddColumn(#"Choose Column", "Customer Age", each 
   let 
     source = #date[BirthDate],
@@ -140,7 +143,9 @@ Additional fields were introduced to enhance segmentation and demographic insigh
 ```
 
 #### DimDate
-From the `DimDate` table only the `FullDateAlternateKey` field was included, and renamed as `Date`.  to simplify the time-based analysis. Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
+From the `DimDate` table only the `FullDateAlternateKey` field was included, and renamed as `Date`.  to simplify the time-based analysis. 
+
+Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
 - `Year`: Extracted using Year([Date]) and formatted as an Integer-type variable. Only data from 2011 onward was included, excluding 2009 and 2010 from the analysis.
 - `Month Number`: Derived using Date.Month([Date]) to support chronological sorting, formatted as Integer.
 - `Month Name`: Created with Date.MonthName([Date]) and truncated to the first three characters (e.g. Jan, Feb, Mar), formatted as Text-type.
@@ -158,19 +163,21 @@ else "Weekday"
 #### DimProduct
 The analysis incorporated these columns from the `DimProduct` dataset:
 - `ProductKey`
-- `EnglishProductName` (renamed as `ProductName`)
+- `EnglishProductName` (renamed as `ProductName`).
 - `Color`
+
 Missing values in the `Color` column were replaced with the label `Unspecified` to ensure consistency in product categorisation and visual filtering.
 
 #### DimGeography
-Key geographical fields were extracted from `DimGeography` to enable location-based insights
-- `City` – Provides local-level geographical context
-- `EnglishCountryRegionName` – Renamed as `Country` for clarity and consistency
-- `SalesTerritoryKey` – Enabled connection to higher-level territorial classification
+Key geographical fields were extracted from `DimGeography` to enable location-based insights:
+- `City` – Provides local-level geographical context.
+- `EnglishCountryRegionName` – Renamed as `Country` for clarity and consistency.
+- `SalesTerritoryKey` – Enabled connection to higher-level territorial classification.
 
 #### DimSalesTerritory
 The following fields were retained from the `DimSalesTerritory` table to support regional analysis:
 `SalesTerritoryKey`,	`SalesTerritoryAlternateKey`,	`SalesTerritoryRegion`,	`SalesTerritoryCountry`,	and `SalesTerritoryGroup`. 
+
 All entries containing `NA` values were excluded to ensure consistency and accuracy in territorial segmentation.
 
 ### Data Analysis
@@ -187,8 +194,8 @@ This sheet presents a concise year-over-year analysis of Adventure Works sales d
 - Above-Average Profit Analysis: In 2007 and 2008, profits exceeded the calculated four-year average (~$31.57M), contributing a combined $84.7M or 67.1% of total profit during the period.
 
 ##### Pivot_ProfitByMonth-Day-Qtr
-This sheet presents a time-based breakdown of Total Profit for a selected year, offering insight into seasonal, weekly, and daily performance patterns. While results vary depending on the year chosen, the following summary reflects trends observed for 2006
-- Top-performing months: May ($3.09M), March ($2.87M), and June ($2.83M) collectively contributed 47.5% of annual profit, indicating a strong mid-year surge
+This sheet presents a time-based breakdown of Total Profit for a selected year, offering insight into seasonal, weekly, and daily performance patterns. While results vary depending on the year chosen, the following summary reflects trends observed for 2006.
+- Top-performing months: May ($3.09M), March ($2.87M), and June ($2.83M) collectively contributed 47.5% of annual profit, indicating a strong mid-year surge.
 - Seasonal Dips: November ($1.42M) and September ($1.59M) returned the lowest monthly profits, suggesting potential seasonal slowdowns.
 - Quarterly Breakdown: Q2 led the year with $8.65M (31% of total profit), followed by Q1 ($7.76M). Profit tapered slightly in Q3 ($6.02M) and Q4 ($5.74M), reinforcing mid-year peak performance.
 - Day-of-Week Trends: Monday ($4.43M), Sunday ($4.12M), and Friday ($4.21M) were the top contributors, accounting for 45.2% of annual profit. Wednesday and Thursday showed comparatively lower results.
@@ -204,8 +211,8 @@ This sheet offers a deep dive into product-level profitability, highlighting whi
 This sheet delivers a comprehensive customer profitability analysis, integrating demographic, transactional, and geographic insights. Here’s a concise breakdown for 2006:
 - Top Customers: The five highest-earning customers contributed a combined $1.38M in profit, underscoring the value of targeted relationship strategies.
 - Customer Demographics:
-  - Total Customers: 2,577
-  - Average Age: 46 years
+  - Total Customers: 2,577.
+  - Average Age: 46 years.
   - Gender Split: Female with $14.48M in profit, Male with $13.97M in profit. Gender contribution is balanced, with a slight edge in profit generation from female customers.
   - Age Group Performance: 50 Plus dominates with $11.51M, contributing over 48% of total customer profit.
 - Geographic Distribution: Top Countries were Australia ($9.9M) and United States: ($9.0M). United Kingdom, Canada, Germany, and France followed with $2.2M–$2.7M each.
@@ -223,12 +230,12 @@ Includes buttons for switching between dashboard views (Time Series, Products & 
 
 - Summary KPIs
 Displays core metrics such as:
-  - Order Quantity: 28.41K (+46.41% compared to the preious year, 2005)
-  - Total Revenue: $69.48M
-  - Total Profit: $28.18M
-  - Transactions: 2.68K (+45.09% compared to the preious year, 2005)
-  - Profit Margin: 40.6%
-  - Total COGS: $41.31M
+  - Order Quantity: 28.41K (+46.41% compared to the preious year, 2005).
+  - Total Revenue: $69.48M.
+  - Total Profit: $28.18M.
+  - Transactions: 2.68K (+45.09% compared to the preious year, 2005).
+  - Profit Margin: 40.6%.
+  - Total COGS: $41.31M.
 
 - Yearly Profit Comparison: A horizontal bar chart comparing total profit across four years, with 2007 and and 2008 contributing the highest share (67.1%). In this graph it is also possible to select the Revenue or Number of Transacions to be displayed.
 - Monthly Profit Trends (2006): A line graph reveals seasonal patterns in profitability, with peaks in May, March, and June, representing 47.5% of the year's profit.
@@ -241,25 +248,26 @@ Displays core metrics such as:
 
 #### Product & Customer-Level Profitability 
 This dashboard presents detailed profitability insights across products, customers, and demographic segments for Adventure Works, with results filtered by year. It enables exploration of how individual items and customer groups contribute to overall financial performance.
+
 Key Components:
 - Top 5 Profitable Products: Road-150 Red (sizes 44–62) dominates, contributing $12.38M collectively, or 43.9% of total profit.
 - Product Summary: Out of 606 available products, only 56 were sold, highlighting an opportunity for inventory optimisation.
 - Profit by Product Colour: 
-  - Red: $16.36M
-  - Black: $7.86M
-  - Silver: $3.39M
+  - Red: $16.36M.
+  - Black: $7.86M.
+  - Silver: $3.39M.
   - Other colours returned no profit, indicating limited customer preference.
 - Price Category Breakdown: Products generating profit were exclusively priced above $150, reflecting a high-value portfolio.
 - Top 5 Customers: Each contributed around $29.76K, totalling 0.5% of overall profit, suggesting a wide and evenly distributed customer base.
 - Customer Demographics:
-  - Total customers: 2,677
-  - Average age: 46
+  - Total customers: 2,677.
+  - Average age: 46.
   - 50 Plus age group: $11.51M (40.8% of profit), showing strong purchasing power in older demographics.
 - Gender-Based Profit Contribution: A near-even split, with a slight edge toward female customer profitability.
-  - Female: 51.4%
-  - Male: 48.6%
+  - Female: 51.4%.
+  - Male: 48.6%.
 - Geographic Trends: Supported by map visuals highlighting spatial distribution.
-  - Australia & United States: Combined contribution of 65.8% of total profit
+  - Australia & United States: Combined contribution of 65.8% of total profit.
 - Year Filter: Allows users to switch between 2005–2008 to compare trends across time.
 - Country Filter: Enables focused analysis by geographic region.
 
@@ -274,15 +282,15 @@ Key Components:
 
 ### Temporal Trends
 - Top months by year:
-  - 2005 & 2007: December, November, October
-  - 2006: May, March, June (47.5% of that year’s profit)
-  - 2008: June, May, April
-- Weekday dominance: - Weekdays consistently contributed over 70% of total profit across all four years. Thursday ranked among the top three most profitable days throughout the entire period
+  - 2005 & 2007: December, November, October.
+  - 2006: May, March, June (47.5% of that year’s profit).
+  - 2008: June, May, April.
+- Weekday dominance: - Weekdays consistently contributed over 70% of total profit across all four years. Thursday ranked among the top three most profitable days throughout the entire period.
 - Most profitable quarters:
-  - Q4 in 2005 ($7.41M)
-  - Q2 in 2006 ($8.65M)
-  - Q4 in 2007 ($17.63M)
-  - Q1 in 2008 ($18.44M)
+  - Q4 in 2005 ($7.41M).
+  - Q2 in 2006 ($8.65M).
+  - Q4 in 2007 ($17.63M).
+  - Q1 in 2008 ($18.44M).
 
 ### Product-Level Insights
 - High-margin strategy: All profitable items were priced above $150, underscoring the effectiveness of premium product positioning.
