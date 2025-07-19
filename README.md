@@ -33,6 +33,8 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Data Analysis](#data-analysis)
   - [Data Visualisation](#data-visualisation)
 - [Insights](#insights)
+  - [Year-over-Year Performance Overview](#year_over_year_performance_overview)
+  - 
 - [Action Plan](#action-plan)
 - [Excel Report](#excel-report)	
 
@@ -252,9 +254,28 @@ Key Components:
 
 ![dahsboard2](assets/img/project5_Product_Customer-Profitability.png)
 
-
-
 ## Insights
+### Year-over-Year Performance Overview
+- Revenue growth: From $33.37M in 2005 to over $101M in both 2007 and 2008 — highlighting consistent business expansion.
+- Profit peaks: 2007 delivered the highest profit ($42.55M), closely followed by 2008 ($42.16M), together contributing 67.1% of total four-year profit.
+- Operational scale-up: Transactions surged from 1.01K in 2005 to 32.27K by 2008.
+- Product conversion success: In 2005, 25 of 606 products were sold  (4.1%). By contrast, in 2008, sold product increased four times that amount and were highly profitable.
+
+(**ss here**)
+
+ ### Temporal Trends 
+- Top months:
+  - December, November, and October for 2005 and 2007
+  - May, March, and June for 2006
+  - June, May and April for 2008
+  - May, March, and June accounted for 47.5% of 2006 profit
+- Weekday dominance: Weekdays contributed to more than 70% of total profit across the four years analised (2005-2008)
+- The most profitable quarters were
+  - Q4 in 2005 ($7.41M)
+  - Q2 in 2006 ($8.65M)
+  - Q4 in 2007 ($17.63M).
+  - Q1 in 2008 ($18.44M).
+
 
 
 
