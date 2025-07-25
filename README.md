@@ -87,28 +87,17 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
             <td rowspan=2> Plot </td>
         </tr>
         <tr>
-            <td><b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.  </td>
+            <td><b>Weekday Advantage:</b> Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year. </td>
         </tr>
         <tr>
-            <td rowspan=4>Triglycerides</td>
-            <td>&lt;150</td>
-            <td>&lt;1.69</td>
-            <td>Normal</td>
+            <td> <b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.</td>
+            <td> Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. </td>
+            <td> Plot </td>
         </tr>
         <tr>
-            <td>150~199</td>
-            <td>1.69~2.25</td>
-            <td>Borderline high</td>
-        </tr>
-        <tr>
-            <td>200~499</td>
-            <td>2.26~5.64</td>
-            <td>High</td>
-        </tr>
-        <tr>
-            <td>&ge;500</td>
-            <td>&ge;5.65</td>
-            <td>Very High</td>
+            <td><b>Geographic Focus:</b> Australia and the United States accounted for over 60% of total profit.</td>
+            <td> Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. Focused efforts in these regions can amplify revenue growth and market share. </td>
+            <td> Plot </td>
         </tr>
     </tbody>
 </table>
