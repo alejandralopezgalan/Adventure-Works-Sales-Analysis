@@ -77,7 +77,7 @@ Consider rationalising the SKU portfolio to eliminate low-profit contributors an
             <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
             <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. <br>
 This timing strategy enhances impact and revenue potential. </td>
-            <td><img src="assets/img/Project5-Product-Profitability.pn"></img> </td>
+            <td><img src="assets/img/Project5-Seasonal-Peaks.png"></img> </td>
         </tr>
         <tr>
             <td><b>Weekday Advantage:</b> Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year. </td>
