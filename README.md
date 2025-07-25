@@ -57,10 +57,62 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 |:-----------|:---:|:--------------|
 | **Consistent Growth:** Revenue increased steadily, peaking at over $101M in 2007 and 2008. |   | Analyase factors behind 2007–2008 peaks to inform future revenue strategy. |
 | **Product Profitability:** Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits. | 27  | Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability |
-| **Seasonal Peaks:** Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year. **Weekday Advantage:** Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.| |  Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential.|
+| **Seasonal Peaks:** Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year. 
+ **Weekday Advantage:** Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.| |  Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential.|
 | Customer Drivers: The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced. | | Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. |
 | **Geographic Focus:** Australia and the United States accounted for over 60% of total profit. | | Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. Focused efforts in these regions can amplify revenue growth and market share. | 
--
+
+<table>
+    <thead>
+        <tr>
+            <th>Finding</th>
+            <th>Recommendation</th>
+            <th>Plot/L</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Consistent Growth:</b> Revenue increased steadily, peaking at over $101M in 2007 and 2008.</td>
+            <td>Analyase factors behind 2007–2008 peaks to inform future revenue strategy.</td>
+            <td> Plot </td>
+        </tr>
+        <tr>
+            <td><b>Product Profitability:</b> Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.</td>
+            <td> Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability </td>
+            <td> Plot </td>
+        </tr>
+        <tr>
+            <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
+            <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential. </td>
+            <td rowspan=2> Plot </td>
+        </tr>
+        <tr>
+            <td><b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.  </td>
+        </tr>
+        <tr>
+            <td rowspan=4>Triglycerides</td>
+            <td>&lt;150</td>
+            <td>&lt;1.69</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>150~199</td>
+            <td>1.69~2.25</td>
+            <td>Borderline high</td>
+        </tr>
+        <tr>
+            <td>200~499</td>
+            <td>2.26~5.64</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>&ge;500</td>
+            <td>&ge;5.65</td>
+            <td>Very High</td>
+        </tr>
+    </tbody>
+</table>
+
 
 - 
 - 
