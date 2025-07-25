@@ -58,7 +58,7 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
         <tr>
             <th>Finding</th>
             <th>Recommendation</th>
-            <th>Plot/L</th>
+            <th>Plot</th>
         </tr>
     </thead>
     <tbody>
