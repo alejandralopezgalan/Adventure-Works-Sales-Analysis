@@ -35,7 +35,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Year-over-Year Performance Overview](#year-over-year-performance-overview)
   - [Temporal Trends](#temporal-trends)
   - [Product-Level Insights](#product-level-insights)
-  - [Customer Demographics and Geography](#customer-demographics-and-geography)
+  - [Customer Demographics & Geography](#customer-demographics-&-geography)
 - [Action Plan](#action-plan)
 - [Excel Report](#excel-report)	
 
