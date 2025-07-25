@@ -20,7 +20,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
   - [Solution](#solution)
-  - [Key Findings & Recomendations](#key-findings-&-recomendations)
+  - [Key Findings and Recomendations](#key-findings-and-recomendations)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -35,7 +35,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
   - [Year-over-Year Performance Overview](#year-over-year-performance-overview)
   - [Temporal Trends](#temporal-trends)
   - [Product-Level Insights](#product-level-insights)
-  - [Customer Demographics & Geography](#customer-demographics-&-geography)
+  - [Customer Demographics and Geography](#customer-demographics-and-geography)
 - [Action Plan](#action-plan)
 - [Excel Report](#excel-report)	
 
@@ -52,7 +52,7 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - Structured insights to support business-oriented decision-making.
 - A clear demonstration of analytical thinking and visualisation techniques in Excel.
 
-### Key Findings & Recommendations
+### Key Findings and Recommendations
 <table>
     <thead>
         <tr>
@@ -328,7 +328,7 @@ Key Components:
 - Colour segmentation: Red products were top performers in 2005 and 2006, while black variants led in 2007 and 2008.
 - Inventory scope: Sold products ranged from 25 in 2005 to 102 in 2008, suggesting opportunities for SKU optimisation and targeted product marketing.
 
-### Customer Demographics & Geography
+### Customer Demographics and Geography
 - Age-based profitability: Customers aged 50+ generated at least 39% of total profit during the analysed period.
 - Gender contribution: Profit was nearly evenly split between male and female customers, with a slight edge toward female profitability.
 - Geographic distribution: Australia and the United States consistently ranked as the top-performing regions, contributing over 60% of total customer profit.
