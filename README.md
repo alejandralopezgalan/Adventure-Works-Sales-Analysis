@@ -20,8 +20,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
   - [Solution](#solution)
-  - [Key Findings](#key-findings)
-  - [Recommendations](#recommendations)
+  - [Key Findings & Recomendations](#key-findings-&-recomendations)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -53,8 +52,14 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - Structured insights to support business-oriented decision-making.
 - A clear demonstration of analytical thinking and visualisation techniques in Excel.
 
-### Key Findings
-- Consistent Growth: Revenue increased steadily, peaking at over $101M in 2007 and 2008.
+### Key Findings & Recommendations
+| Finding       | Plot | Recommendation       |
+|:-----------|:---:|:--------------|
+| Consistent Growth: Revenue increased steadily, peaking at over $101M in 2007 and 2008. |   | Analyase factors behind 2007–2008 peaks to inform future revenue strategy. |
+| Diego      | 27  | Mexico City    |
+
+
+- 
 - Product Profitability: Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.
 - Seasonal Peaks: Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.
 - Weekday Advantage: Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.
