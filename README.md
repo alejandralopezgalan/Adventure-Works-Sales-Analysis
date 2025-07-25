@@ -75,10 +75,11 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
         <tr>
             <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
             <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential. </td>
-            <td rowspan=2> Plot </td>
+            <td> Plot </td>
         </tr>
         <tr>
             <td><b>Weekday Advantage:</b> Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year. </td>
+          <td> Plot </td>
         </tr>
         <tr>
             <td> <b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.</td>
