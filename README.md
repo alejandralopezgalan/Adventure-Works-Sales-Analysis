@@ -65,31 +65,35 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
         <tr>
             <td><b>Consistent Growth:</b> Revenue increased steadily, peaking at over $101M in 2007 and 2008.</td>
             <td>Analyase factors behind 2007–2008 peaks to inform future revenue strategy.</td>
-            <td> Plot </td>
+            <td><img src="assets/img/Project5-Revenue2007-2008.png"></img></td>
         </tr>
         <tr>
             <td><b>Product Profitability:</b> Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.</td>
-            <td> Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability </td>
-            <td> Plot </td>
+            <td> Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. <br>
+Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability </td>
+            <td><img src="assets/img/Project5-Product-Profitability.png"></img></td>
         </tr>
         <tr>
             <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
-            <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential. </td>
-            <td> Plot </td>
+            <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. <br>
+This timing strategy enhances impact and revenue potential. </td>
+            <td><img src="assets/img/Project5-Product-Profitability.pn"></img> </td>
         </tr>
         <tr>
             <td><b>Weekday Advantage:</b> Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year. </td>
-          <td> Plot </td>
+          <td><img src="assets/img/Project5-Weekday.png"></img></td>
         </tr>
         <tr>
             <td> <b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.</td>
-            <td> Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. </td>
-            <td> Plot </td>
+            <td> Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. <br>
+Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. </td>
+            <td><img src="assets/img/Project5-age_group.png"></td>
         </tr>
-        <tr>
+        <tr> 
             <td><b>Geographic Focus:</b> Australia and the United States accounted for over 60% of total profit.</td>
-            <td> Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. Focused efforts in these regions can amplify revenue growth and market share. </td>
-            <td> Plot </td>
+            <td> Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. <br>
+Focused efforts in these regions can amplify revenue growth and market share. </td>
+            <td><img src="assets/img/Projct5-au-usa.png"></td>
         </tr>
     </tbody>
 </table>
