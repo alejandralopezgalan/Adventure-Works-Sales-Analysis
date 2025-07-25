@@ -53,15 +53,6 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - A clear demonstration of analytical thinking and visualisation techniques in Excel.
 
 ### Key Findings & Recommendations
-| Finding       | Plot | Recommendation       |
-|:-----------|:---:|:--------------|
-| **Consistent Growth:** Revenue increased steadily, peaking at over $101M in 2007 and 2008. |   | Analyase factors behind 2007–2008 peaks to inform future revenue strategy. |
-| **Product Profitability:** Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits. | 27  | Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability |
-| **Seasonal Peaks:** Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year. 
- **Weekday Advantage:** Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.| |  Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. This timing strategy enhances impact and revenue potential.|
-| Customer Drivers: The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced. | | Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. |
-| **Geographic Focus:** Australia and the United States accounted for over 60% of total profit. | | Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. Focused efforts in these regions can amplify revenue growth and market share. | 
-
 <table>
     <thead>
         <tr>
@@ -101,20 +92,6 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
         </tr>
     </tbody>
 </table>
-
-
-- 
-- 
--
-- 
-- 
-
-### Recommendations
-- 
--
-- 
-- 
-- Reward Top Customers: Establish retention programmes for high-profit individual buyers.
 
 ## Introduction
 ### Business Problem
