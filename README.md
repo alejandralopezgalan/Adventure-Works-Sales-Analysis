@@ -64,18 +64,18 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
     <tbody>
         <tr>
             <td><b>Consistent Growth:</b> Revenue increased steadily, peaking at over $101M in 2007 and 2008.</td>
-            <td>Analyase factors behind 2007–2008 peaks to inform future revenue strategy.</td>
+            <td><b>Analyase factors behind 2007–2008 peaks</b> to inform future revenue strategy.</td>
             <td><img src="assets/img/Project5-Revenue2007-2008.png"></img></td>
         </tr>
         <tr>
             <td><b>Product Profitability:</b> Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.</td>
-            <td> Refine product strategy by prioritising premium, high-margin items such as Road-150 Red and Mountain-200. <br>
+            <td><b>Refine product strategy by prioritising premium, high-margin items</b> such as Road-150 Red and Mountain-200. <br>
 Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability </td>
             <td><img src="assets/img/Project5-Product-Profitability.png"></img></td>
         </tr>
         <tr>
             <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
-            <td rowspan=2> Optimise campaign scheduling by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. <br>
+            <td rowspan=2><b>Optimise campaign scheduling</b> by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. <br>
 This timing strategy enhances impact and revenue potential. </td>
             <td><img src="assets/img/Project5-Seasonal-Peaks.png"></img> </td>
         </tr>
@@ -85,13 +85,13 @@ This timing strategy enhances impact and revenue potential. </td>
         </tr>
         <tr>
             <td> <b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.</td>
-            <td> Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits. <br>
+            <td><b>Enhance Customer Segmentation:</b> Target older customers with tailored promotions and loyalty benefits. <br>
 Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. </td>
             <td><img src="assets/img/Project5-age_group.png"></td>
         </tr>
         <tr> 
             <td><b>Geographic Focus:</b> Australia and the United States accounted for over 60% of total profit.</td>
-            <td> Strengthen regional strategy by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. <br>
+            <td><b>Strengthen regional strategy</b> by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. <br>
 Focused efforts in these regions can amplify revenue growth and market share. </td>
             <td><img src="assets/img/Projct5-au-usa.png"></td>
         </tr>
